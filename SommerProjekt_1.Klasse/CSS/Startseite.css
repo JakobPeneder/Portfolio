@@ -1,0 +1,139 @@
+html {
+    overflow: hidden;
+}
+/*<!--- Hintergrundbild hier --->*/
+body{
+    font-family:sans-serif;
+    background-image: url(../Bilder/Background2.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;    
+    animation:10s image_slider;
+    margin:0;   
+}
+/*<!--- Hintergrundbild Ende --->*/
+/*<!--- Navbar hier --->*/
+#Logo{
+    width: 10vw;
+    transition: 2s transform;
+}
+#Logo:hover{
+    transform: translateX(1vw);
+}
+.Navigation{
+    padding:1%;
+    position: sticky;
+    top:0;
+    right:0;
+    left:0;
+    background-color: #ffffffe8;
+    height:13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.Links{
+    text-transform: uppercase;
+    width: 195%;
+}
+.einzelnerLink{
+    font-size:100%;
+    margin-left:5%;
+    width:20%;
+    color:black;
+    text-decoration:none;
+    transition: 0.25s font-size;
+}
+.einzelnerLink:hover{
+    background-image: url(../Bilder/blitz.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x:right;
+    padding-right:2%;
+    font-size:110%;
+    font-weight:bold;
+}
+/*<!--- Navbar Ende --->*/
+/*<!--- Animation --->*/
+@keyframes image_slider{
+    50% {background-image: url(../Bilder/Background.jpg);}
+    100% {background-image: url(../Bilder/Background2.jpg);}
+}
+/*<!--- Animation Ende--->*/
+/*<!--- Text --->*/
+#Text{
+    background-color: #00000073;
+    padding:1%;
+    margin-top:7%;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    opacity: 0;
+    transition: opacity 2s, transform 2s;
+}
+#Text p{
+    color:white;
+    line-height: 30px;
+}
+#Text:hover{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+#Blitz{
+    position: absolute;
+    top:40%;
+    left:50%;
+    width:2%;
+}
+@media (max-width: 600px) {
+    .Navigation {
+        margin: 0;
+        display: block;
+    }
+    #Logo {
+        width: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+    .einzelnerLink {
+        text-align: center;
+        width: 20%;
+        font-size: 0.8rem;
+        margin-left: 7%;
+        margin-bottom: 2%;
+    }
+    .Links {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .einzelnerLink:hover {
+        font-size: 1rem;
+        background-image: none;
+    }
+    #Text {
+        padding:3%;
+        margin-top:7%;
+        width:90%;
+        font-size: 0.8rem;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        opacity: 0;
+    }
+    body {
+        background-image: url(../Bilder/hochformat.jpg);
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat:no-repeat; 
+        animation: none;
+    }
+   
+}
+/*<!--- Text Ende --->*/
+
+
+
+

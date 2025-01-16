@@ -1,0 +1,129 @@
+@font-face {
+    font-family: HarryPotter;
+    src: url(.././Schriften/HARRYP__.TTF);
+}
+html{
+    width: 100%;
+}
+body{
+    font-family:sans-serif;
+    margin:0%;     
+    background-color: black;   
+    width: 100%;
+    background-image: url(../Bilder/background\ anmeldung.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*<!--- Navbar hier --->*/
+#Logo{
+    width: 10vw;
+    transition: 2s transform;
+}
+#Logo:hover{
+    transform: translateX(1vw);
+}
+.Navigation{
+    padding:1%;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    height:13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 4;
+}
+.Links{
+    width: 63%;
+}
+.einzelnerLink{
+    font-family:sans-serif;
+    font-size:100%;
+    margin-left:5%;
+    width:30%;
+    color:black;
+    text-decoration:none;
+    text-transform: uppercase;
+    transition: 0.25s font-size, 0.25s font-weight;
+}
+#active{
+    background-image: url(.././Bilder/blitz.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x:right;
+    padding-right:2.5%;
+    text-transform: uppercase;
+    font-size:115%;
+    letter-spacing: 1px;
+    font-family: HarryPotter;
+}
+.einzelnerLink:hover{
+    font-size:110%;
+    font-weight:bold;
+}
+/*<!--- Navbar Ende --->*/
+/*<!--- Design --->*/
+.Formular {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    color: white;
+    width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin-top:  2vw;
+    border: solid 3px white;
+    margin-bottom: 2vw;
+    box-shadow: 10px 10px 100px white;
+    background-image: url(.././Bilder/Hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+input, select {
+    margin-bottom: 3vw;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+}
+textarea {
+    margin-bottom: 2vh;
+}
+select {
+    padding: 1%;
+}
+h1 {
+    color: white;
+    font-family: HarryPotter;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    text-align: center;
+}
+label {
+    font-weight: bold;
+}
+#button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2%;
+}
+.Sendetext {
+    text-transform: uppercase;
+    color: white;
+    margin-left: 20%;
+    margin-top: 10%;    
+    font-size: 2rem;
+} 
+
+/*<!--- Design Ende --->*/
+
+
+
+
+
+

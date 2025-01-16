@@ -1,0 +1,483 @@
+@font-face {
+    font-family: HarryPotter;
+    src: url(../Schriften/HARRYP__.TTF);
+}
+body{
+    font-family:sans-serif;
+    margin:0%;     
+    background-color: black;   
+    width: 100vw;
+}
+/*<!--- Navbar hier --->*/
+#Logo{
+    width: 10vw;
+    transition: 2s transform;
+}
+#Logo:hover{
+    transform: translateX(1vw);
+}   
+ 
+.Navigation{
+    padding:1%;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    height:13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 4;
+}
+.Links{
+    width: 63%;
+}
+.einzelnerLink{
+    font-family:sans-serif;
+    font-size:100%;
+    margin-left:5%;
+    width:30%;
+    color:black;
+    text-decoration:none;
+    text-transform: uppercase;
+    transition: 0.25s font-size, 0.25s font-weight;
+}
+#active{
+    background-image: url(../Bilder/blitz.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x:right;
+    padding-right:2.5%;
+    text-transform: uppercase;
+    font-size:115%;
+    letter-spacing: 1px;
+    font-family: HarryPotter;
+}
+.einzelnerLink:hover{
+    font-size:110%;
+    font-weight:bold;
+}
+/*<!--- Navbar Ende --->*/
+/*<!--- Häuserübersicht hier --->*/
+.Hauser{
+    width: 70%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top:4%;   
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.Hauser img{
+    object-fit: contain;
+    width: 120%;
+}
+.image {
+	position: relative;
+    transition: transform 0.25s;
+    margin-right:2%;
+    margin-left: 2%;
+}
+.image:hover{
+    transform: scale(1.03);
+    z-index: 6;
+}
+.image__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: 0.25s;
+    z-index: 6;
+}
+.image__overlay:hover {
+	opacity: 1;
+}
+.image__title {
+	font-size: 140%;
+	font-weight: bold;
+}
+/*<!--- Häuserübersicht Ende --->*/
+
+/*<!--- Haus --->*/
+#Gryffindor{
+    background-image: url(../Bilder/Gryffindor_Background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#Slytherin{
+    background-image: url(../Bilder/Slytherin_Background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#Ravenclaw{
+    background-image: url(../Bilder/Ravenclaw_Background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#Hufflepuff{
+    background-image: url(../Bilder/Hufflepuff_Background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+/*<!--- Haus Ende --->*/
+/*<!--- Design Gryffindor --->*/
+.container_Text_Gryffindor{
+    margin-top:3vw;
+    width: 60vw;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #00000063;
+    border: #000 2px solid;
+    padding:1%;
+    transition: 1.3s box-shadow;
+}
+.container_Text_Gryffindor p{
+    color:#fff;
+    font-size: 110%;
+    line-height:150%;
+}
+.container_flex{
+    margin-top:6vw;
+    display: flex;
+    width:90vw;
+    margin-right:auto;
+    margin-left:auto;
+}
+.item {
+    color:white;
+    margin-right:auto;
+    margin-left:auto;
+    width:33%;
+}    
+.item li{
+    line-height:5vw;
+    font-size:1.3rem;
+}
+
+h1 {
+    color:white;
+    font-size:2rem;
+    font-family: HarryPotter;
+    letter-spacing:5px;
+}
+table {
+    width:110%;;
+    padding:4%;
+    font-size:1.3rem;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+tr, td{
+    padding:4%;
+    padding-left:2%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+.weight{
+    font-weight:bold;
+}
+.Text_Design {
+    color:#fff;
+    font-size: 110%;
+    line-height:150%;
+}
+.Gegenstand {
+    display: flex;
+    margin-top: 5vw;
+    width: 100vw;
+    margin-right: auto;
+    margin-left:auto;
+    margin-bottom: 5vw;
+}
+.item {
+    width: 50%;
+}
+#Logo_Gryffindor{
+    width: 27vw;
+    object-fit: contain;
+}
+@keyframes animation_Gryffindor{
+    10%{box-shadow: 0.1em 0.1em 150px red;}
+    20%{ box-shadow: 0.1em 0.1em 25px red;}
+    30%{ box-shadow: 0.1em 0.1em 75px red;}
+    40%{ box-shadow: 0.1em 0.1em 15px red;}
+    50%{ box-shadow: 0.1em 0.1em 170px red;}
+    60%{ box-shadow: 0.1em 0.1em 100px red;}
+    70%{ box-shadow: 0.1em 0.1em 17px red;}
+    80%{ box-shadow: 0.1em 0.1em 6px red;}
+    90%{ box-shadow: 0.1em 0.1em 60px red;}
+    100%{ box-shadow: 0.1em 0.1em 100px red;}
+}
+#Abgrenzung_Gryffindor {
+    margin-top: 8vh;
+    height: 11vh;
+    width: 100vw;
+    align-items: center;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: rgba(61,1,1,255);
+    box-shadow: 0.1em 0.1em 100px red;
+    animation: animation_Gryffindor 20s infinite;
+}
+#Abgrenzung_Gryffindor h1{
+    font-size: 2.2rem;
+}
+.flexWeiteres_Gryffindor {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20vh;
+    width:80vw;
+    display: flex;
+    margin-bottom: 6vh;
+}
+.flexWeiteres_Gryffindor img{
+    border-radius: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    width: 60%;
+    height: 100%;
+    transition: box-shadow 1.3s;
+}
+.flexWeiteres_Gryffindor img:hover{
+    box-shadow: 0.1em 0.1em 100px red;
+}
+.container_Text_Gryffindor:hover{
+       box-shadow: 0.1em 0.1em 100px red;
+}
+/*<!--- Design Gryffindor Ende--->*/
+/*<!--- Design Slytherin --->*/
+.flexWeiteres_Slytherin {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20vh;
+    width:80vw;
+    display: flex;
+    margin-bottom: 6vh;
+}
+.flexWeiteres_Slytherin img{
+    border-radius: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    width: 60%;
+    height: 100%;
+    transition: box-shadow 1.3s;
+}
+.flexWeiteres_Slytherin img:hover{
+    box-shadow: 0.1em 0.1em 100px #269323;
+}
+.container_Text_Slytherin{
+    margin-top:3vw;
+    width: 60vw;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #00000063;
+    border: #000 2px solid;
+    padding:1%;
+    transition: 1.3s box-shadow;
+}
+.container_Text_Slytherin p{
+    color:#fff;
+    font-size: 110%;
+    line-height:150%;
+}
+.container_Text_Slytherin:hover{
+       box-shadow: 0.1em 0.1em 100px #269323;
+}
+@keyframes animation_Slytherin{
+    10%{box-shadow: 0.1em 0.1em 150px #269323;}
+    20%{ box-shadow: 0.1em 0.1em 25px #269323;}
+    30%{ box-shadow: 0.1em 0.1em 75px #269323;}
+    40%{ box-shadow: 0.1em 0.1em 15px #269323;}
+    50%{ box-shadow: 0.1em 0.1em 170px #269323;}
+    60%{ box-shadow: 0.1em 0.1em 100px #269323;}
+    70%{ box-shadow: 0.1em 0.1em 17px #269323;}
+    80%{ box-shadow: 0.1em 0.1em 6px #269323;}
+    90%{ box-shadow: 0.1em 0.1em 60px #269323;}
+    100%{ box-shadow: 0.1em 0.1em 100px #269323;}
+}
+#Abgrenzung_Slytherin {
+    margin-top: 8vh;
+    height: 11vh;
+    width: 100vw;
+    align-items: center;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: rgba(14,63,16,255);
+    box-shadow: 0.1em 0.1em 100px #269323;
+    animation: animation_Slytherin 20s infinite;
+}
+#Abgrenzung_Slytherin h1{
+    font-size: 2.2rem;
+}
+/*<!--- Design Slytherin Ende--->*/
+/*<!--- Design Hufflepuff --->*/
+.flexWeiteres_Hufflepuff {
+    margin-left: 21vw;
+    margin-top: 20vh;
+    width:80vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;
+}
+.flexWeiteres_Hufflepuff img{
+    border-radius: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    width: 30%;
+    height: 100%;
+    transition: box-shadow 1.3s;
+}
+.flexWeiteres_Hufflepuff img:hover{
+    box-shadow: 0.1em 0.1em 100px yellow;
+}
+.container_Text_Hufflepuff{
+    margin-top:3vw;
+    width: 60vw;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #00000063;
+    border: #000 2px solid;
+    padding:1%;
+    transition: 1.3s box-shadow;
+}
+.container_Text_Hufflepuff p{
+    color:#fff;
+    font-size: 110%;
+    line-height:150%;
+}
+.container_Text_Hufflepuff:hover{
+       box-shadow: 0.1em 0.1em 100px yellow;
+}
+@keyframes animation_Hufflepuff{
+    10%{box-shadow: 0.1em 0.1em 150px yellow;}
+    20%{ box-shadow: 0.1em 0.1em 25px yellow;}
+    30%{ box-shadow: 0.1em 0.1em 75px yellow;}
+    40%{ box-shadow: 0.1em 0.1em 15px yellow;}
+    50%{ box-shadow: 0.1em 0.1em 170px yellow;}
+    60%{ box-shadow: 0.1em 0.1em 100px yellow;}
+    70%{ box-shadow: 0.1em 0.1em 17px yellow;}
+    80%{ box-shadow: 0.1em 0.1em 6px yellow;}
+    90%{ box-shadow: 0.1em 0.1em 60px yellow;}
+    100%{ box-shadow: 0.1em 0.1em 100px yellow;}
+}
+#Abgrenzung_Hufflepuff {
+    margin-top: 8vh;
+    height: 11vh;
+    width: 100vw;
+    align-items: center;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #000;
+    box-shadow: 0.1em 0.1em 100px yellow;
+    animation: animation_Hufflepuff 20s infinite;
+}
+#Abgrenzung_Hufflepuff h1{
+    font-size: 2.2rem;
+}
+#Logo_Hufflepuff{
+    margin-right: auto;
+    margin-left: auto;
+    width:11vw;
+    object-fit: contain;
+}
+#Trinkpokal {
+    margin-right: auto;
+    margin-left: auto;
+    width: 18vw;
+}
+/*<!--- Design Hufflepuff Ende--->*/
+/*<!--- Design Ravenclaw --->*/
+.flexWeiteres_Ravenclaw {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20vh;
+    width:90vw;
+    display: flex;
+    margin-bottom: 6vh;
+}
+.flexWeiteres_Ravenclaw img{
+    border-radius: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    width: 30%;
+    height: 100%;
+    transition: box-shadow 1.3s;
+}
+.flexWeiteres_Ravenclaw img:hover{
+    box-shadow: 0.2em 0.2em 200px #058fb5;
+}
+.container_Text_Ravenclaw{
+    margin-top:3vw;
+    width: 60vw;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #00000063;
+    border: #000 2px solid;
+    padding:1%;
+    transition: 1.3s box-shadow;
+}
+.container_Text_Ravenclaw p{
+    color:#fff;
+    font-size: 110%;
+    line-height:150%;
+}
+.container_Text_Ravenclaw:hover{
+       box-shadow: 0.1em 0.1em 100px #058fb5;
+}
+@keyframes animation_Ravenclaw{
+    10%{box-shadow: 0.1em 0.1em 150px #058fb5;}
+    20%{ box-shadow: 0.1em 0.1em 25px #058fb5;}
+    30%{ box-shadow: 0.1em 0.1em 75px #058fb5;}
+    40%{ box-shadow: 0.1em 0.1em 15px #058fb5;}
+    50%{ box-shadow: 0.1em 0.1em 170px #058fb5;}
+    60%{ box-shadow: 0.1em 0.1em 100px #058fb5;}
+    70%{ box-shadow: 0.1em 0.1em 17px #058fb5;}
+    80%{ box-shadow: 0.1em 0.1em 6px #058fb5;}
+    90%{ box-shadow: 0.1em 0.1em 60px #058fb5;}
+    100%{ box-shadow: 0.1em 0.1em 100px #058fb5;}
+}
+#Abgrenzung_Ravenclaw {
+    margin-top: 8vh;
+    height: 11vh;
+    width: 100vw;
+    align-items: center;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #000;
+    box-shadow: 0.1em 0.1em 100px #058fb5;
+    animation: animation_Ravenclaw 20s infinite;
+}
+#Abgrenzung_Ravenclaw h1{
+    font-size: 2.2rem;
+}
+#Logo_Hufflepuff{
+    margin-right: auto;
+    margin-left: auto;
+    width:11vw;
+    object-fit: contain;
+}
+#Trinkpokal {
+    margin-right: auto;
+    margin-left: auto;
+    width: 18vw;
+}
+/*<!--- Design Ravenclaw Ende --->*/

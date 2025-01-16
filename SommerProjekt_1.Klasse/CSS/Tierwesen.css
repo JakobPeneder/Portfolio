@@ -1,0 +1,174 @@
+@font-face {
+    font-family: HarryPotter;
+    src: url(.././Schriften/HARRYP__.TTF);
+}
+body{
+    
+    font-family:sans-serif;
+    margin:0;    
+    background-color: black;   
+    width: 100%;
+    background-image: url(../Bilder/Tierwesen.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/*<!--- Navbar hier --->*/
+#Logo{
+    width: 10vw;
+    transition: 2s transform;
+}
+#Logo:hover{
+    transform: translateX(1vw);
+}
+.Navigation{
+    padding:1%;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    height:13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 4;
+}
+.Links{
+    width: 63%;
+}
+.einzelnerLink{
+    font-family:sans-serif;
+    font-size:100%;
+    margin-left:5%;
+    width:20%;
+    color:black;
+    text-decoration:none;
+    text-transform: uppercase;
+    transition: 0.25s font-size, 0.25s font-weight;
+}
+#active{
+    background-image: url(.././Bilder/blitz.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x:right;
+    padding-right:2.5%;
+    text-transform: uppercase;
+    font-size:115%;
+    letter-spacing: 1px;
+    font-family: HarryPotter;
+}
+.einzelnerLink:hover{
+    font-size:110%;
+    font-weight:bold;
+}
+/*<!--- Navbar Ende --->*/
+/*<!--- Tierwesen --->*/
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    margin-left: 10%;
+}
+h1{
+    font-family: HarryPotter;
+    margin-top:20%;
+    margin-left:-5%;
+    color:white;
+    letter-spacing: 4px;
+    font-size:220%;
+}
+
+.Text{
+    margin-left:38%;
+    margin-top:5%;
+    width:38%;
+    position: absolute;
+    color:white;
+    opacity: 1;
+    z-index: 2;
+    line-height: 160%;
+    font-size:110%;
+}
+#Niffler{
+    left:-6%;
+    width: 30vw;
+    position: relative;
+    right:35%;
+    transition: 2s all;
+}
+#Hippogreif{
+    width: 27vw;
+    position: relative;
+    left:-6%;
+    top:69%;
+    right:35%;
+    transition: 2s all;
+    animation: animation_Hippogreif 4s;
+}
+#Drache {
+    width: 17vw;
+    position: relative;
+    left:10%;
+    top:10vh;
+    transition: 2s all;
+}
+#Phoenix {
+    width: 24vw;
+    position: relative;
+    left:10%;
+    top:8vh;
+    transition: 2s all;
+}
+#Zentaur{
+    width: 25vw;
+    position: relative;
+    left:10%;
+    top:8vh;
+    transition: 2s all;
+}
+#Niffler:hover{
+    transform: translateX(3.5vw);
+}
+#Hippogreif:hover{
+    transform: translateX(3.5vw);
+}
+#Drache:hover{
+    transform: translateX(3.5vw);
+}
+#Phoenix:hover{
+    transform: translateX(3.5vw);
+}
+#Zentaur:hover{
+    transform: translateX(3.5vw);
+}
+#Gold{
+    width: 7%;
+    position: absolute;
+    left:32%;
+    top:49%;
+    z-index: 0;
+    transition: 1s ease;
+}
+#Gold:hover{
+    transform: rotate(360deg);
+}
+hr{
+    margin-top:11%;
+    margin-bottom:5%;
+}
+
+/*<!--- Tierwesen Ende--->*/
+/*<!--- Animation --->*/
+@keyframes animation_Hippogreif{
+    33%{top:70%; left:30%; transform: rotate(50deg);}
+    66%{top:100%; left:80%;transform: rotate(10deg);}
+    100%{left:-6%; top:69%;transform: rotate(0deg);}
+}
+/*<!--- Animation Ende--->*/
+
+
+
+
+
+
+
