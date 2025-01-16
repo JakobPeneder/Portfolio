@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minigame</title>
+	<link rel="stylesheet" href="./css/spritegame.css">
+	<link rel="shortcut icon" href="./img/pinsel.png" type="image/x-icon">
+
+	<script src="./js/spritegame.js" defer></script>
+	<script src="./data/solutions.js"></script>
+</head>
+<body onload="startGame(), generateRandomNames()">
+
+	<div id="gamenew" onclick="newGame()">New Game</div>
+
+	<img src="./img/leaderboard.png" id="pokal" alt="pokal"onclick="loadTop5()">
+	<div id="leaderboard"></div>
+
+	<div id="infoBox"></div>
+	<div id="pictureBox"></div>
+	<div id="inputText"></div>
+	<div id="lock"></div>
+
+	<div id="selectOptions">
+		<div id="containerNames"></div>
+	</div>
+	<div id="room">Room 1</div>
+
+	<div id="press"></div>
+	<div id="box"></div>
+	<div id="circleInfo"onclick="openInfo()">
+		<div id="text"></div>
+	</div>
+
+
+	<div id="blurbox"></div>
+	<canvas id="canvas"></canvas>
+	<a href="index.html"><img src="./img/getBack.png" id="back"></a>
+
+	<div id="winFlex">
+		<div id="left"></div>
+		<div id="win">
+			Congratulations! You have won the game!<br>Well done!<img id="winPic"src="./img/win.png"><br> <p class="gameNew" onclick="newGame()">New Game</p><a href="./index.html"class="gameNew">Back</a>'
+		</div>
+		<div id="right"></div>	<div id="longLeaderboard"></div>
+
+	</div>
+	<img src="./img/cursor.png" id="cursor" alt="cursor">
+
+    <div id="surface">
+    	<div id="player">
+    		<img id="spriteImg" src = "./img/kirby.png" alt="sprite"/>
+    	</div>
+    </div>
+
+
+</body>
+</html>

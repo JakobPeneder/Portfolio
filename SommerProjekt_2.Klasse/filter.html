@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="./css/filter.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/pinsel.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/filter.js" defer></script>
+    <script src="./data/data.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+</head>
+<body onload="generateSlideshow1(), arrowOn(), switchTo()">
+    <nav id="navbar">
+        <a href="./index.html"><img src="./img/pinsel.png" id="pinsel"></a>
+        <a href="./kunstler.html"class="links">Artists</a>
+        <a href="quiz.html"class="links">Quiz</a>
+        <a href="./spritegame.html"class="links">Minigame</a>
+        <!--
+        <div id="search">
+            <input type="text" id="searchbar">
+            <div id="searchbutton"></div>
+        </div>
+        -->
+        <a><div id="circle"onclick="infoIn()"></div></a>
+    </nav>    
+
+    <div id="infobox"></div>
+    <img src="./img/pfeil.png" id="pfeil" onclick="infoIn()">
+    <div id="showFilter"></div>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">      
+        </div>
+
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+
+
+    <div id="gridSys">
+        <div id="BlackWhite"><div class="filterOption"id="blackwhite"onclick="BlackAndWhite()"></div>
+          <p>Black White</p></div>
+        <div id="Brightness"><div class="filterOption"id="brightness"onclick="Brightness()"></div>
+          <p>Brightness</p></div>
+        <div id="Contrast"><div class="filterOption"id="contrast"onclick="Contrast()"></div>
+          <p>Contrast</p></div>
+        <div id="Sepia"><div class="filterOption"id="sepia"onclick="Sepia()"></div>
+          <p>Sepia</p></div>
+        <div id="Saturate"><div class="filterOption"id="saturate"onclick="Saturate()"></div>
+          <p>Saturate</p></div>
+        <div id="Invert"><div class="filterOption"id="invert"onclick="Invert()"></div>
+          <p>Invert</p></div>
+        <div id="Hue-rotate"><div class="filterOption"id="hue-rotate"onclick="Huerotate()"></div>
+          <p>Hue-rotate</p></div>
+    </div>
+
+
+</body>
+</html>

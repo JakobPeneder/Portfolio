@@ -1,0 +1,82 @@
+[
+    {
+        "username": "123",
+        "password": "123"
+    },
+    {
+        "username": "hufflepuffBadger",
+        "password": "loyalty456"
+    },
+    {
+        "username": "ravenclawEagle",
+        "password": "wisdom789"
+    },
+    {
+        "username": "slytherinSnake",
+        "password": "ambition101"
+    },
+    {
+        "username": "quidditchSeeker",
+        "password": "goldensnitch"
+    },
+    {
+        "username": "potionsMaster",
+        "password": "polyjuice"
+    },
+    {
+        "username": "headmasterAlbus",
+        "password": "elderwand"
+    },
+    {
+        "username": "darkLord",
+        "password": "avadaKedavra"
+    },
+    {
+        "username": "aurorTonks",
+        "password": "metamorphmagus"
+    },
+    {
+        "username": "houseElfDobby",
+        "password": "freedom"
+    },
+    {
+        "username": "hermioneGranger",
+        "password": "leviosa"
+    },
+    {
+        "username": "ronWeasley",
+        "password": "scabbers"
+    },
+    {
+        "username": "harryPotter",
+        "password": "hedwig"
+    },
+    {
+        "username": "albusDumbledore",
+        "password": "phoenix"
+    },
+    {
+        "username": "severusSnape",
+        "password": "always"
+    },
+    {
+        "username": "lordVoldemort",
+        "password": "horcrux"
+    },
+    {
+        "username": "dracoMalfoy",
+        "password": "pureblood"
+    },
+    {
+        "username": "lunaLovegood",
+        "password": "spectrespecs"
+    },
+    {
+        "username": "nevilleLongbottom",
+        "password": "herbology"
+    },
+    {
+        "username": "siriusBlack",
+        "password": "padfoot"
+    }
+]

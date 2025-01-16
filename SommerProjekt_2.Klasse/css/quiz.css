@@ -1,0 +1,319 @@
+:root {
+    --color-nav: #69420B    ;
+    --color-dark: #69420B;
+}
+@font-face {
+    font-family: mainfont;
+    src: url('../font/Itim-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: mainfont;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(168,132,82,0.5916491596638656) 0%, rgba(168,132,82,0.1966911764705882) 37%),url(../img/filter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#navbar  {   
+    z-index: 1000; 
+    width: 100vw;
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 10% 8% 8% 8% 17% 10%;
+    padding: 1%;
+    grid-gap: 9.5vw;
+    color: white;
+    align-items: center;
+    background-color: var(--color-nav);
+}
+#pinsel {
+    width: 45%;
+    text-align: left;
+    padding-left: 7%;
+}
+#circle {
+    height: 4.2vw;
+    width: 4.2vw;
+    margin-left: 20.5vw;
+    margin-top: 2%;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url(.././img/filter.png);
+    background-size: contain;
+    filter: invert(1);
+}
+a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+a:hover {
+    cursor: pointer;
+}
+#add {
+    position: absolute;
+    left: 85vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.answers {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 10% 80% 10%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.possiblities {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin-top: 7%;
+    grid-gap: 0;
+    color: white;
+}
+.possiblities div {
+    margin: 5%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 7%;
+    cursor:pointer;
+    transition: transform 0.3s;
+}
+.possiblities div:hover {
+    transform: scale(1.05);
+}
+#quiz {
+    width: 100vw;
+    margin-top: 6%;
+    z-index: 100000000000000000000000000;   
+    position: absolute;
+}
+p {
+    margin-left: 42%;
+
+}
+img {
+    width: 40%;
+}
+input {
+    z-index: 5;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 0.7%;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: mainfont;
+}
+::placeholder {
+    color: white;
+}
+#marked {
+    position: relative;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 1px;
+  }
+
+#marked:after {
+content: '';
+position: absolute; 
+width: 70%;
+left: 15%;
+display: block;
+height: 2px;
+background-color: white;
+bottom: -5px;
+}
+
+#error {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--color-dark);
+    border-radius: 8px;
+    padding: 0.8%;
+    border: none;
+    display: none;
+}
+#headquestion::placeholder {
+    color: black;
+}
+.addButtons {
+
+    width: 10vw;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5%;
+    margin-top: -0.5vw;
+    left: 80vw;
+    background-color: #69420B;
+    color: white;
+    z-index: 20;
+    border-radius: 7px;
+    transition: 0.4s transform;
+}
+.addButtons:hover {
+    transform: scale(1.1);
+}
+h1 {
+    text-align: center;
+}
+#tries {
+    width: 20vw;
+    position: fixed;
+    top: 20%;
+    left: 40vw;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#newGameButton:hover {
+    transform: scale(1.1);
+}
+#pokal {
+    width: 17vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block; 
+    margin-top: 3vw;
+    animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+    0% { transform: translateY(100%);}
+    100% {transform: translateY(0);}
+}
+
+#newGameButton {
+    width: 10vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5%;
+    margin-top: 2vw;
+    background-color: #69420B;
+    color: white;
+    border-radius: 7px;
+    transition: 0.4s transform;
+    animation: slide-in-top 1s;
+}
+#congrats {
+    animation: slide-in-top 1s;
+}
+@keyframes slide-in-top {
+    0% { transform: translateY(-10vw);}
+    100% {transform: translateY(0);}
+}
+
+
+
+.slide-in-left {
+    animation: slide-in-left 1s;
+}
+
+@keyframes slide-in-left {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.slide-in-right {
+    animation: slide-in-right 1s;
+}
+
+@keyframes slide-in-right {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+
+.slide-in-bottom {
+    animation: slide-in-bottom 1s;
+}
+
+@keyframes slide-in-bottom {
+    0% { transform: translateY(200%); }
+    100% { transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% { transform: translateX(-250%); }
+    100% { transform: translateX(0); }
+}
+
+.fade-out {
+    animation: fade-out 1s;
+}
+
+@keyframes fade-out {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-250%); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 90% { transform: translateX(-10px); }
+    20%, 80% { transform: translateX(10px); }
+    30%, 50%, 70% { transform: translateX(-10px); }
+    40%, 60% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Not my Code */
+.links {
+    position: relative;
+    text-align: center;
+}
+
+.links:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.25s ease-in-out;
+}
+.links:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+canvas {
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: none;
+    width: 100%;
+    margin: 0;
+}

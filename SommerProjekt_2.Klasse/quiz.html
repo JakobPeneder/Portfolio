@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="shortcut icon" href="./img/pinsel.png" type="image/x-icon">
+    
+    <script src="./data/quizData.js"></script>
+    <script src="./js/quiz.js" defer></script>
+</head>
+<body onload="loadQuestions()">
+    <canvas id="canvas"></canvas>
+
+    <nav id="navbar">
+        <a href="./index.html"><img src="./img/pinsel.png" id="pinsel"></a>
+        <a href="./kunstler.html"class="links">Artists</a>
+        <a href="quiz.html"id="marked">Quiz</a>
+        <a href="./spritegame.html"class="links">Minigame</a>
+        <!--
+        <div id="search">
+            <input type="text" id="searchbar">
+            <div id="searchbutton"></div>
+        </div>
+        -->
+        <a href="filter.html"><div id="circle"></div></a>
+    </nav>  
+    
+
+    <div id="tries">0</div>
+    <div id="add"></div>
+    <div id="error"></div>
+    <div id="quiz"></div>
+</body>
+</html>

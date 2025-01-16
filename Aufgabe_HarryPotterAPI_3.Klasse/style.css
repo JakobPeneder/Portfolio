@@ -1,0 +1,61 @@
+body {
+    background: #E5B80B; color: #fff; font-family:sans-serif; margin: 0; padding: 2em; 
+   
+}
+
+
+#container {
+    width: 100vw;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    margin-top: 3vw;
+}
+#login {
+    width: 100vw;
+    margin-top: 10%;
+}
+#loginHead {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: #E5B80B;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#user, #password {
+    width: 20%;
+    outline: none;
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.75%;
+    margin-top: 2%;
+}
+h1 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.heart {
+    position: relative;
+    width: 2vw;
+    object-fit: contain;
+}
+#error {
+    text-align: center;
+}
+#logo {
+    width:20%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#logo:hover {
+    cursor: pointer;
+}

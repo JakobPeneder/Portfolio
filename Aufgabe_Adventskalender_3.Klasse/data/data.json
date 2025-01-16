@@ -1,0 +1,335 @@
+[
+    {
+        "id" : 1,
+        "country": "Germany",
+        "recipe": "Stollen",
+        "ingredients": ["flour", "yeast", "milk", "sugar", "butter", "spices", "dried fruits", "nuts"],
+        "instructions": [
+            "1. In a large bowl, mix flour, yeast, milk, sugar, butter, and spices until well combined.",
+            "2. Add dried fruits and nuts to the mixture and knead until evenly distributed.",
+            "3. Shape the dough into a loaf and place it on a baking sheet.",
+            "4. Preheat the oven to 180°C (350°F) and bake the loaf for about 45-50 minutes or until golden brown.",
+            "5. Let the Stollen cool completely before slicing and serving."
+        ]
+    },
+    {
+        "id" : 2,
+        "country": "Italy",
+        "recipe": "Panettone",
+        "ingredients": ["flour", "yeast", "sugar", "eggs", "butter", "milk", "candied fruits", "raisins"],
+        "instructions": [
+            "1. In a large bowl, mix flour, yeast, sugar, eggs, butter, and milk until a smooth dough forms.",
+            "2. Add candied fruits and raisins to the dough and knead until evenly distributed.",
+            "3. Place the dough in a tall mold and let it rise in a warm place for about 2 hours or until doubled in size.",
+            "4. Preheat the oven to 180°C (350°F) and bake the Panettone for about 40-45 minutes or until a skewer inserted into the center comes out clean.",
+            "5. Let the Panettone cool completely before slicing and serving."
+        ]
+    },
+    {  
+        "id" : 3,
+        "country": "France",
+        "recipe": "Bûche de Noël",
+        "ingredients": ["sponge cake", "cream filling", "chocolate"],
+        "instructions": [
+            "1. Bake a sponge cake according to your favorite recipe and let it cool completely.",
+            "2. Spread the cream filling evenly over the sponge cake.",
+            "3. Carefully roll the cake into a log shape and place it seam-side down on a serving platter.",
+            "4. Melt the chocolate and spread it over the rolled cake to resemble a log.",
+            "5. Decorate with additional chocolate or festive decorations as desired."
+        ]
+    },
+    {
+        "id" : 4,
+        "country": "Spain",
+        "recipe": "Turrón",
+        "ingredients": ["honey", "sugar", "egg whites", "almonds"],
+        "instructions": [
+            "1. In a saucepan, mix honey and sugar and cook over medium heat until the sugar dissolves.",
+            "2. Whisk the egg whites until stiff peaks form and fold them into the honey mixture.",
+            "3. Add the almonds and cook until the mixture thickens.",
+            "4. Pour the mixture into molds and let it set at room temperature.",
+            "5. Once set, cut the Turrón into pieces and serve."
+        ]
+    },
+    {
+        "id" : 5,
+        "country": "United Kingdom",
+        "recipe": "Christmas Pudding",
+        "ingredients": ["suet", "flour", "breadcrumbs", "sugar", "spices", "dried fruits", "brandy"],
+        "instructions": [
+            "1. In a large bowl, mix suet, flour, breadcrumbs, sugar, and spices until well combined.",
+            "2. Add dried fruits and mix until evenly distributed.",
+            "3. Grease a pudding basin and fill it with the mixture.",
+            "4. Cover the basin with a double layer of parchment paper and secure it with string.",
+            "5. Steam the pudding for about 6 hours, topping up with water as needed.",
+            "6. Let the pudding cool completely, then store in a cool, dry place until ready to serve.",
+            "7. To serve, steam the pudding again for about 2 hours and flame with brandy before slicing."
+        ]
+    },
+    {
+        "id" : 6,
+        "country": "Brazil",
+        "recipe": "Rabanada",
+        "ingredients": ["bread", "milk", "eggs", "sugar", "cinnamon", "oil"],
+        "instructions": [
+            "1. Slice the bread into thick slices.",
+            "2. In a bowl, mix milk and eggs until well combined.",
+            "3. Dip each bread slice into the milk mixture, ensuring it is well soaked.",
+            "4. Heat oil in a frying pan over medium heat.",
+            "5. Fry the soaked bread slices until golden brown on both sides.",
+            "6. Drain on paper towels and sprinkle with sugar and cinnamon before serving."
+        ]
+    },
+    {
+        "id" : 7,
+        "country": "Argentina",
+        "recipe": "Pan Dulce",
+        "ingredients": ["flour", "yeast", "sugar", "eggs", "butter", "milk", "candied fruits", "nuts"],
+        "instructions": [
+            "1. In a large bowl, mix flour, yeast, sugar, eggs, butter, and milk until a smooth dough forms.",
+            "2. Add candied fruits and nuts to the dough and knead until evenly distributed.",
+            "3. Place the dough in a mold and let it rise in a warm place for about 2 hours or until doubled in size.",
+            "4. Preheat the oven to 180°C (350°F) and bake the Pan Dulce for about 40-45 minutes or until a skewer inserted into the center comes out clean.",
+            "5. Let the Pan Dulce cool completely before slicing and serving."
+        ]
+    },
+    {
+        "id" : 8,
+        "country": "Australia",
+        "recipe": "Pavlova",
+        "ingredients": ["egg whites", "sugar", "cornstarch", "vinegar", "vanilla extract", "whipped cream", "fresh fruits"],
+        "instructions": [
+            "1. Preheat the oven to 150°C (300°F) and line a baking sheet with parchment paper.",
+            "2. In a large bowl, beat egg whites until stiff peaks form.",
+            "3. Gradually add sugar, beating until the mixture is glossy and sugar is dissolved.",
+            "4. Fold in cornstarch, vinegar, and vanilla extract.",
+            "5. Spread the meringue onto the prepared baking sheet, shaping it into a circle with a slight indentation in the center.",
+            "6. Bake for about 1 hour, then turn off the oven and let the meringue cool completely in the oven.",
+            "7. Top with whipped cream and fresh fruits before serving."
+        ]
+    },
+    {
+        "id" : 9,
+        "country": "New Zealand",
+        "recipe": "Christmas Mince Pies",
+        "ingredients": ["pastry", "mincemeat", "egg wash"],
+        "instructions": [
+            "1. Preheat the oven to 200°C (400°F) and grease a muffin tin.",
+            "2. Roll out the pastry and cut out circles to fit the muffin tin.",
+            "3. Place the pastry circles into the muffin tin and fill with mincemeat.",
+            "4. Cut out smaller pastry circles or shapes to place on top of the mincemeat.",
+            "5. Brush the tops with egg wash.",
+            "6. Bake for about 15-20 minutes or until the pastry is golden brown.",
+            "7. Let the mince pies cool before serving."
+        ]
+    },
+    {
+        "id" : 10,
+        "country": "South Africa",
+        "recipe": "Malva Pudding",
+        "ingredients": ["flour", "sugar", "eggs", "apricot jam", "milk", "butter", "vinegar", "baking soda", "cream"],
+        "instructions": [
+            "1. Preheat the oven to 180°C (350°F) and grease a baking dish.",
+            "2. In a large bowl, mix flour, sugar, eggs, apricot jam, milk, butter, vinegar, and baking soda until well combined.",
+            "3. Pour the batter into the prepared baking dish.",
+            "4. Bake for about 45 minutes or until a skewer inserted into the center comes out clean.",
+            "5. In a saucepan, heat cream and additional butter and sugar until melted.",
+            "6. Pour the hot sauce over the baked pudding and let it soak in before serving."
+        ]
+    },
+    {
+        "id" : 11,
+        "country": "Japan",
+        "recipe": "Christmas Cake",
+        "ingredients": ["sponge cake", "whipped cream", "strawberries"],
+        "instructions": [
+            "1. Bake a sponge cake according to your favorite recipe and let it cool completely.",
+            "2. Spread whipped cream over the top and sides of the sponge cake.",
+            "3. Decorate with fresh strawberries.",
+            "4. Chill the cake in the refrigerator before serving."
+        ]
+    },
+    {
+        "id" : 12,
+        "country": "China",
+        "recipe": "Tangyuan",
+        "ingredients": ["glutinous rice flour", "water", "sesame paste", "sugar"],
+        "instructions": [
+            "1. In a bowl, mix glutinous rice flour and water to form a dough.",
+            "2. Divide the dough into small balls and flatten each ball.",
+            "3. Place a small amount of sesame paste in the center of each flattened dough ball and seal it to form a round ball.",
+            "4. Bring a pot of water to a boil and cook the Tangyuan until they float to the surface.",
+            "5. Serve the Tangyuan in a sweet syrup or broth."
+        ]
+    },
+    {
+        "id" : 13,
+        "country": "Philippines",
+        "recipe": "Bibingka",
+        "ingredients": ["rice flour", "coconut milk", "sugar", "eggs", "baking powder", "banana leaves"],
+        "instructions": [
+            "1. Preheat the oven to 180°C (350°F) and line a baking dish with banana leaves.",
+            "2. In a large bowl, mix rice flour, coconut milk, sugar, eggs, and baking powder until well combined.",
+            "3. Pour the batter into the prepared baking dish.",
+            "4. Bake for about 30-40 minutes or until a skewer inserted into the center comes out clean.",
+            "5. Let the Bibingka cool slightly before serving."
+        ]
+    },
+    {
+        "id" : 14,
+        "country": "India",
+        "recipe": "Kulkuls",
+        "ingredients": ["flour", "sugar", "eggs", "coconut milk", "butter", "oil"],
+        "instructions": [
+            "1. In a large bowl, mix flour, sugar, eggs, coconut milk, and butter until a dough forms.",
+            "2. Roll the dough into small balls and shape them using a fork or a special Kulkul mold.",
+            "3. Heat oil in a frying pan over medium heat.",
+            "4. Fry the Kulkuls until golden brown and crispy.",
+            "5. Drain on paper towels and let them cool before serving."
+        ]
+    },
+    {
+        "id" : 15,
+        "country": "United States",
+        "recipe": "Eggnog",
+        "ingredients": ["milk", "cream", "sugar", "eggs", "nutmeg", "vanilla extract", "rum"],
+        "instructions": [
+            "1. In a saucepan, heat milk, cream, and sugar over medium heat until the sugar dissolves.",
+            "2. In a bowl, whisk eggs until light and frothy.",
+            "3. Gradually add the hot milk mixture to the eggs, whisking constantly.",
+            "4. Return the mixture to the saucepan and cook over low heat until thickened.",
+            "5. Remove from heat and stir in nutmeg, vanilla extract, and rum.",
+            "6. Chill the eggnog in the refrigerator before serving."
+        ]
+    },
+    {
+        "id" : 16,
+        "country": "Mexico",
+        "recipe": "Buñuelos",
+        "ingredients": ["flour", "baking powder", "salt", "eggs", "milk", "sugar", "cinnamon", "oil"],
+        "instructions": [
+            "1. In a large bowl, mix flour, baking powder, and salt.",
+            "2. Add eggs and milk to the dry ingredients and mix until a dough forms.",
+            "3. Roll the dough into small balls and flatten each ball into a thin circle.",
+            "4. Heat oil in a frying pan over medium heat.",
+            "5. Fry the dough circles until golden brown and crispy.",
+            "6. Drain on paper towels and sprinkle with sugar and cinnamon before serving."
+        ]
+    },
+    {
+        "id" : 17,
+        "country": "Russia",
+        "recipe": "Kulich",
+        "ingredients": ["flour", "yeast", "milk", "sugar", "eggs", "butter", "raisins", "candied fruits"],
+        "instructions": [
+            "1. In a large bowl, mix flour, yeast, milk, and sugar until well combined.",
+            "2. Add eggs and butter to the mixture and knead until a smooth dough forms.",
+            "3. Add raisins and candied fruits to the dough and knead until evenly distributed.",
+            "4. Place the dough in a tall mold and let it rise in a warm place for about 2 hours or until doubled in size.",
+            "5. Preheat the oven to 180°C (350°F) and bake the Kulich for about 40-45 minutes or until a skewer inserted into the center comes out clean.",
+            "6. Let the Kulich cool completely before slicing and serving."
+        ]
+    },
+    {
+        "id" : 18,
+        "country": "Greece",
+        "recipe": "Melomakarona",
+        "ingredients": ["flour", "semolina", "sugar", "orange juice", "olive oil", "honey", "walnuts", "cinnamon"],
+        "instructions": [
+            "1. In a large bowl, mix flour, semolina, and sugar.",
+            "2. Add orange juice and olive oil to the dry ingredients and mix until a dough forms.",
+            "3. Shape the dough into small oval cookies and place them on a baking sheet.",
+            "4. Preheat the oven to 180°C (350°F) and bake the cookies for about 20-25 minutes or until golden brown.",
+            "5. In a saucepan, heat honey and water until melted.",
+            "6. Dip the baked cookies in the honey syrup and sprinkle with chopped walnuts and cinnamon before serving."
+        ]
+    },
+    {
+        "id" : 19,
+        "country": "Sweden",
+        "recipe": "Lussekatter",
+        "ingredients": ["flour", "yeast", "milk", "saffron", "sugar", "butter", "raisins"],
+        "instructions": [
+            "1. In a small bowl, dissolve saffron in warm milk and let it sit for a few minutes.",
+            "2. In a large bowl, mix flour, yeast, sugar, and butter until well combined.",
+            "3. Add the saffron milk to the flour mixture and knead until a smooth dough forms.",
+            "4. Let the dough rise in a warm place for about 1 hour or until doubled in size.",
+            "5. Preheat the oven to 200°C (400°F) and line a baking sheet with parchment paper.",
+            "6. Divide the dough into small portions and shape each portion into an 'S' shape.",
+            "7. Place a raisin in the center of each swirl and place the shaped dough on the prepared baking sheet.",
+            "8. Bake for about 10-12 minutes or until golden brown.",
+            "9. Let the Lussekatter cool slightly before serving."
+        ]
+    },
+    {
+        "id" : 20,
+        "country": "Norway",
+        "recipe": "Kransekake",
+        "ingredients": ["almond flour", "sugar", "egg whites", "icing sugar"],
+        "instructions": [
+            "1. Preheat the oven to 200°C (400°F) and grease a set of kransekake ring molds.",
+            "2. In a large bowl, mix almond flour and sugar.",
+            "3. Add egg whites to the almond mixture and knead until a smooth dough forms.",
+            "4. Divide the dough into small portions and roll each portion into a long rope.",
+            "5. Shape the ropes into rings and place them in the prepared molds.",
+            "6. Bake for about 10-12 minutes or until lightly golden.",
+            "7. Let the rings cool completely before assembling the kransekake.",
+            "8. Stack the rings in decreasing size to form a tower and decorate with icing sugar."
+        ]
+    },
+    {
+        "id" : 21,
+        "country": "Poland",
+        "recipe": "Piernik",
+        "ingredients": ["flour", "honey", "sugar", "eggs", "butter", "spices", "baking soda", "milk"],
+        "instructions": [
+            "1. In a saucepan, heat honey, sugar, and butter until melted and combined.",
+            "2. In a large bowl, mix flour, spices, and baking soda.",
+            "3. Add the honey mixture, eggs, and milk to the dry ingredients and mix until a smooth dough forms.",
+            "4. Preheat the oven to 180°C (350°F) and grease a baking dish.",
+            "5. Pour the batter into the prepared baking dish.",
+            "6. Bake for about 45-50 minutes or until a skewer inserted into the center comes out clean.",
+            "7. Let the Piernik cool completely before slicing and serving."
+        ]
+    },
+    {
+        "id" : 22,
+        "country": "Finland",
+        "recipe": "Joulutorttu",
+        "ingredients": ["pastry dough", "plum jam", "powdered sugar"],
+        "instructions": [
+            "1. Preheat the oven to 200°C (400°F) and line a baking sheet with parchment paper.",
+            "2. Roll out the pastry dough and cut it into squares.",
+            "3. Place a spoonful of plum jam in the center of each square.",
+            "4. Make cuts from each corner towards the center and fold alternating corners to the center to form a star shape.",
+            "5. Place the pastries on the prepared baking sheet.",
+            "6. Bake for about 10-12 minutes or until golden brown.",
+            "7. Let the Joulutorttu cool slightly and dust with powdered sugar before serving."
+        ]
+    },
+    {
+        "id" : 23,
+        "country": "Denmark",
+        "recipe": "Risalamande",
+        "ingredients": ["rice", "milk", "sugar", "vanilla extract", "almonds", "whipped cream", "cherry sauce"],
+        "instructions": [
+            "1. In a saucepan, cook rice with milk and sugar until the rice is tender and the mixture is thick.",
+            "2. Stir in vanilla extract and chopped almonds.",
+            "3. Let the rice mixture cool completely.",
+            "4. Fold in whipped cream until well combined.",
+            "5. Serve the Risalamande chilled with cherry sauce on top."
+        ]
+    },
+    {
+        "id" : 24,
+        "country": "Austria",
+        "recipe": "Vanillekipferl",
+        "ingredients": ["flour", "sugar", "butter", "ground almonds", "vanilla sugar", "powdered sugar"],
+        "instructions": [
+            "1. In a large bowl, mix flour, sugar, butter, and ground almonds until a dough forms.",
+            "2. Shape the dough into small crescent shapes and place them on a baking sheet.",
+            "3. Preheat the oven to 180°C (350°F) and bake the cookies for about 10-12 minutes or until lightly golden.",
+            "4. Let the Vanillekipferl cool slightly, then roll them in a mixture of vanilla sugar and powdered sugar before serving."
+        ]
+    }
+]

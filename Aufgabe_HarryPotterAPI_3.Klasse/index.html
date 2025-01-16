@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter API</title>
+    <script> 
+        let timestamp = new Date().getTime();
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'style.css?' + timestamp;
+        document.head.appendChild(link);
+        let script = document.createElement('script');
+        script.src = 'fetch.js?' + timestamp;
+        script.defer = true;
+        document.head.appendChild(script);
+    </script>
+    <style>
+#grid {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 30% 12% 12% 12% 30%;
+    }
+    #search {
+        width: 45%;
+        padding: 0.5em;
+        margin: 1em;
+        outline: none;
+        margin-left: -4vw;
+    }
+    
+#flex {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+
+}
+#flex img {
+    height: 40%;
+}
+#flex div p {
+    text-align: center;
+    color: black;
+}
+    #flex1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .box { 
+        padding: 1em;
+        transition: transform 0.5s;
+        width: 80%; 
+        text-align: center;
+        box-sizing: border-box; 
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        background-color: black;
+        padding: 3vw;
+    }
+    img {
+    display:block; width:40%; margin: 0 auto; object-fit: contain;
+    }
+    .box:hover {
+        transform: scale(1.1);
+    }
+    #flex div img {
+        transition: transform 0.5s;
+    }
+    #flex div img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    h2 {
+        width: 300%;
+        text-align: center;
+    }
+    select {
+        width: 40%;
+        padding: 0.5em;
+        margin: 1em;
+        outline: none;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+        border: none;
+        background-color: #000;
+    }
+    option {
+        color: white;
+    }
+    #logo {
+        width: 45%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .favFam {
+        width: 20%;
+    }
+    .favFam:hover {
+        cursor: pointer;
+    }
+    #search {
+        margin-right: auto;
+        margin-left: auto;
+        outline: none;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+    #search:focus {
+        font-weight: bold;
+    }
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.868);
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .heart:hover {
+        cursor: pointer;
+    }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="login">
+        <h1 id="loginHead">Log in</h1>
+        <input type="text" id="user" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <div id="error"></div>
+    </div>
+
+    <div id="everything">
+
+    <div id="grid">
+        <select name="Category" id="category" onchange="loadSpellsByCategory()">
+            <option value="None">None</option>
+            <option value="Charm">Charm</option>
+            <option value="Healing spell">Healing spell</option>
+            <option value="Dark charm">Dark charm</option>
+            <option value="Curse">Curse</option>
+            <option value="Magical transportation">Magical transportation</option>
+            <option value="Conjuration">Conjuration</option>
+            <option value="Transfiguration">Transfiguration</option>
+            <option value="Dark Arts">Dark Arts</option>
+            <option value="Counter-jinx">Counter-jinx</option>
+            <option value="Counter-charm">Counter-charm</option>
+        </select>
+
+        <img class="favFam"src="https://cdn-icons-png.flaticon.com/512/2089/2089423.png" onclick="loadFamousSpells()">
+        <img id="logo"src="https://images.vexels.com/content/211955/preview/magic-wand-2b180d.png" onclick="loadSpells()">
+        <img class="favFam"src="https://cdn-icons-png.flaticon.com/512/833/833386.png" onclick="printFavourites()">
+
+        <input id="search" type="text" placeholder="Search for an incantation">
+    
+       </div>
+        <div id="container"></div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists</title>
+    <link rel="stylesheet" href="./css/kunstler.css">
+    <link rel="shortcut icon" href="./img/pinsel.png" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>     <script src="./js/kunstler.js" defer></script>
+    <script src="./data/artists.js"></script>
+</head>
+<body onload="generateArtists()">
+    
+  <nav id="navbar">
+        <a href="./index.html"><img src="./img/pinsel.png" id="pinsel"></a>
+        <a href="./kunstler.html"id="marked">Artists</a>
+        <a href="quiz.html"class="links">Quiz</a>
+        <a href="./spritegame.html"class="links">Minigame</a>
+        <!--
+        <div id="search">
+            <input type="text" id="searchbar">
+            <div id="searchbutton"></div>
+        </div>
+        -->
+        <a href="filter.html"><div id="circle"></div></a>
+    </nav>  
+
+    <div id="erg"></div>
+</body>
+</html>

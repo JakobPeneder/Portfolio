@@ -1,0 +1,340 @@
+@font-face {
+    font-family: font;
+    src: url(./Fonts/fFinish.ttf);
+}
+body {
+    font-family: sans-serif;
+    background-image: url(./Images/animation.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#container {
+    height: 65vh;
+    width: 100vw;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 15% 15% 15%;
+    justify-content: center;
+    margin-top: 90%;
+    animation: map 1s;
+}
+#menu {
+    width: 35vw;
+    left: 32vw;
+    display: none;
+    position: fixed;
+    top:100vh;
+    font-family: font;
+    padding: 1.5%;
+    padding-bottom: -1%;
+}
+#playmore, #endGame, #colorPick {
+    object-fit: contain;
+    width: 97%;
+    font-size: 3rem;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    border: 2px solid rgb(186, 184, 184);
+    cursor: pointer;
+    padding:1%;
+    padding-left: 2%;
+    background-color: rgba(255, 255, 255, 0.664);
+    color: black;
+    transition: all 0.4s;
+}
+#playmore img {
+    width: 45%;
+    object-fit: contain;
+}
+#endGame img {
+    width: 40%;
+    object-fit: contain;
+}
+#colorPick img {
+    width: 23%;
+    object-fit: contain;
+}
+#playmore:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.865);
+}
+#endGame:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.865);
+}
+#colorPick:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.865);
+}
+.menuOn {
+    animation: animationMenu 0.4s;
+}
+.menuOff {
+    animation: animationOff 0.4s;
+}
+@keyframes animationMenu {
+    0% {top: 100vh;}
+    100% {top: 30vh;}
+}
+@keyframes animationOff {
+    0% {top: 30vh;}
+    100% {top: 100vh;}
+}
+#leftcount {
+    font-family: font;
+    font-size: 3rem;
+}
+#rightcount {
+    font-family: font;
+    margin-left: 4vw;
+    font-size: 3rem;
+}
+@keyframes map {
+    50% {margin-top: 50%}
+    100% {margin-top: 3.5%;}
+}
+.item {
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.clickOn {
+    animation: clickOn 0.7s ;
+}
+.clickOff {
+    animation: clickOff 0.7s ;
+}
+@keyframes clickOff {
+    0% {box-shadow: 10px 10px 30px white;}
+    100% {box-shadow: none;}
+}
+@keyframes clickOn {
+    0% {box-shadow: none;}
+    100% {box-shadow: 10px 10px 30px white;}
+}
+#info {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-color: red;
+    color: white;
+    width: 20%;
+    font-size: 120%;
+    height: 8vh;
+    z-index: 1000;
+    padding: 1%;    
+    left: -25%;
+    padding-bottom: 2%;
+    object-fit: contain;
+    top: 35vw;
+    position: absolute;
+}
+@keyframes infoanm {
+    from {transform: translate(-26vw);}
+    to {transform: translate(26vw);}
+}
+@keyframes outinfo {
+    from {transform: translate(26vw);}
+    to {transform: translate(-26vw);} 
+}
+#pickOne {
+    display: flex;
+    width: 100vw;
+    z-index: 1000;
+    margin-top: 110%;
+    justify-content: center;
+    animation: animationPick 2s;
+}
+#pickOne img {
+    width: 10%;
+    object-fit: contain;
+}
+select {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.674);
+    height: 5vh;
+    border-radius: 10px;
+}
+#score {
+    position: absolute;
+    float: left;
+}
+#score1 {
+    position: absolute;
+    margin-left: 94%;
+}
+.players {
+    width: 6vw;
+}
+.scoreOn {
+    animation: scoreanimation 1s;
+}
+.score1On {
+    animation: score1animation 1s;
+}
+
+
+
+.scoreOnEnd {
+    animation: scoreanimationEnd 1.5s;
+}
+.score1OnEnd {
+    animation: score1animationEnd 1.5s;
+}
+@keyframes scoreanimationEnd {
+    0% {transform: translate(-20vw);}
+    100% {transform: translate(45vw);}
+}
+@keyframes score1animationEnd {
+    0% {margin-left: 110vw;}
+    100% {margin-left: 56.5%;}
+}
+
+
+
+.scoreOff {
+    animation: scoreanimationOff 1s;
+}
+.score1Off {
+    animation: score1animationOff 1s;
+}
+@keyframes scoreanimation {
+    0% {transform: translate(-20vw);}
+    100% {transform: translate(0vw);}
+}
+@keyframes score1animation {
+    0% {margin-left: 110vw;}
+    100% {margin-left: 92.5%;}
+}
+@keyframes scoreanimationOff {
+    0% {transform: translate(0vw);}
+    100% {transform: translate(-20vw);}
+}
+@keyframes score1animationOff {
+    0% {margin-left: 92.5%;}    
+    100% {margin-left: 110vw;}
+}
+.backOff {
+    animation: Off 1s;
+}
+@keyframes Off {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+#winnerPlayer {
+    width: 70%;
+    margin-left: 13%;
+}
+#winner {
+    display: flex;
+    margin-top: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slideIn {
+    animation: winnerOfRound 1s;
+}
+.slideDown {
+    animation: winnerOfRoundOff 1s;
+}
+@keyframes winnerOfRound {
+    0% {margin-top:100vh;}
+    100% {margin-top: 10vh;}
+}
+@keyframes winnerOfRoundOff {
+    0% {margin-top:10vh;}
+    100% {margin-top: 100vh;}
+}
+#medaille {
+    width: 100%;
+}
+#box {
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.imgPlay {
+    object-fit: contain;
+    width: 6vw;
+}
+#input1 {
+    margin-left: 2%;
+    width: 7%;
+    text-align: center;
+}
+#input2 {
+    text-align: center;
+    margin-right: 2%;
+    width: 7%;
+}
+@keyframes animationPick {
+    0% {margin-top: 100%;}
+    100% {margin-top: 25vh;}
+}
+#Tic, #Tac, #Toe {
+    position: absolute;
+    width: 18%;
+}
+#symbol {
+    position: absolute;
+    object-fit: contain;
+    width: 8%;
+}
+#startGame {
+    margin-top: 1%;
+    text-shadow: 0 0 10px black;
+    margin-left: 48%;
+    display: block;
+    z-index: 1000000;
+    padding: 0.5%;
+    width: 5vw;
+    font-size: 3.8rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.591);
+    font-weight: bold;
+    cursor: pointer;
+    animation: startanimation both 1.5s infinite;   
+}
+@keyframes startanimation {
+    0% {scale: 1;}
+    50% {scale: 1.3;}
+}
+#Tac {
+    top: -20%;
+    left: 40%; 
+    animation: Tacan 1s;
+}
+#Tic {
+    width: 15%;
+    animation: Tican 1s;
+    left: -20%;
+    top: 3%;
+
+}
+#Toe {
+    animation: Toean 1s;
+    right: -20%;
+    top: 3%;
+}
+@keyframes Tacan {
+    0% {top: -5%;}
+    100% {top: 3%}
+}
+@keyframes Tican {
+    0% {left: -5%;}
+    100% {left: 16%}
+}
+@keyframes Toean {
+    0% {right: -5%;}
+    100% {right: 16%}
+}
+@keyframes aufAb {
+    50% {top: 5%;}
+    100% {top: 3%;}
+}

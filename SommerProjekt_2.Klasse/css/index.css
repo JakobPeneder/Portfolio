@@ -1,0 +1,222 @@
+:root {
+    --color-nav: #69420B;
+    --color-dark: #69420B;
+}
+@font-face {
+    font-family: mainfont;
+    src: url('../font/Itim-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: mainfont;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgba(168,132,82,0.5916491596638656) 0%, rgba(168,132,82,0.1966911764705882) 37%),url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@keyframes filteron {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+
+}
+#navbar  {    
+    width: 100vw;
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 10% 8% 8% 8% 10%;
+    padding: 1%;
+    grid-gap: 2px;
+    grid-gap: 9.5vw;
+    color: white;
+    align-items: center;
+    background-color: var(--color-nav);
+}
+#pinsel {
+    width: 45%;
+    text-align: left;
+    padding-left: 7%;
+}
+#circle {
+    height: 4.2vw;
+    width: 4.2vw;
+    margin-left: 20.5vw;
+    margin-top: 2%;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url(.././img/filter.png);
+    background-size: contain;
+    animation: filteron 4s infinite;
+    filter: invert(1);
+}
+#searchbar {
+    height: 4.5vh;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 4%;
+    border: none;
+    font-family: mainfont;
+    font-family: 1.2rem;
+}
+#searchbutton {
+    width: 100%;
+    background-color: var(--color-dark);
+    background-image: url(../img/lupe.png);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;   
+}
+#search {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+}
+a:hover {
+    cursor: pointer;
+}
+.swiper {
+    width: 80vw;
+    height: 85vh;
+    .swiper-slide {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-dark);
+    }
+    .swiper-pagination {
+        margin-bottom: 1%;
+    }
+   
+}
+
+.names {
+    margin-top: 17%;
+    margin-left: 5%;
+    font-size: 2.1rem;
+    color: var(--color-dark);
+}
+#Mona {
+    background-image: url('../img/MonaLisa.png');
+    background-repeat: no-repeat; 
+    background-size: 30%;
+    background-position: center;
+}
+#Abendmahl {
+    background-image: url('../img/LastMeal.png');
+    background-repeat: no-repeat; 
+    background-size: 64%;
+    background-position:center 40%;
+}
+#Sternenacht {
+    background-image: url('../img/Sternenacht.png');
+    background-repeat: no-repeat; 
+    background-size: 58%;
+    background-position:center 50%;
+}
+#balloon {
+    background-image: url('../img/girlwithballoon.png');
+    background-repeat: no-repeat; 
+    background-size: 53%;
+    background-position:center 50%;
+}
+#earring {
+    background-image: url('../img/girlwiththepearlearring.png');
+    background-repeat: no-repeat; 
+    background-size: 35%;
+    background-position:center 50%;
+}
+#figures {
+    background-image: url('../img/Figuresattheseaside.png');
+    background-repeat: no-repeat; 
+    background-size: 53%;
+    background-position:center 50%;
+}
+#gardens {
+    background-image: url('../img/blobsgrowoinbelovedgardens.png');
+    background-repeat: no-repeat; 
+    background-size: 40%;
+    background-position:center 50%;
+}
+#scream {
+    background-image: url('../img/thescream.png');
+    background-repeat: no-repeat; 
+    background-size: 35%;
+    background-position:center 50%;
+}
+#kiss {
+    background-image: url('../img/thekiss.png');
+    background-repeat: no-repeat; 
+    background-size: 40%;
+    background-position:center 50%;
+}
+#miro {
+    background-image: url('../img/obradejoanmiro.png');
+    background-repeat: no-repeat; 
+    background-size: 50%;
+    background-position:center 50%;
+}
+#frida {
+    background-image: url('../img/friedakahlowithbirdsandroses.png');
+    background-repeat: no-repeat; 
+    background-size: 32%;
+    background-position:center 50%;
+}
+.artistsName {
+    position: absolute;
+    margin-left: 64vw;
+    margin-top: 32%;
+    font-size: 1.5rem;
+    color: var(--color-dark);
+}
+.swiper-button-next,
+.swiper-button-prev {
+    right:10px;
+    padding: 30px;
+    color: black !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+
+
+
+/* Not my Code */
+.links {
+    position: relative;
+    text-align: center;
+}
+
+.links:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.25s ease-in-out;
+}
+.links:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+/*---------------*/

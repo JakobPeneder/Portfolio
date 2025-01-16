@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art-Collection</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/pinsel.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./data/data.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/filter.js" defer></script>
+
+</head>
+<body onload="generateSlideshow(), createSwiper()">
+    <nav id="navbar">
+        <a href="./index.html"><img src="./img/pinsel.png" id="pinsel"></a>
+        <a href="./kunstler.html"class="links">Artists</a>
+        <a href="quiz.html"class="links">Quiz</a>
+        <a href="./spritegame.html"class="links">Minigame</a>
+        <!--
+        <div id="search">
+            <input type="text" id="searchbar">
+            <div id="searchbutton"></div>
+        </div>
+        -->
+        <a href="filter.html"onclick="filterop()"><div id="circle"></div></a>
+    </nav>    
+  
+   
+    <!--Slideshow -->
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper "onclick="loadFilter(`${swiper.activeIndex}`)">  
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <!-- Slideshow -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
