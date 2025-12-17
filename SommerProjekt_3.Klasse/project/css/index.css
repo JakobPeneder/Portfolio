@@ -1,0 +1,212 @@
+@font-face {
+    font-family: InterX;
+    src: url(.././font/InterVariable.ttf);
+}
+:root {
+    --primary-color: #3A7FCA;
+    --secondary-color: #7CB1EA;
+    --tertiary-color: #FFF;
+    --quaternary-color: #000;
+    --quinary-color: #000;
+    --senary-color: #000;
+    --septenary-color: #000;
+    --octonary-color: #000;
+    --nonary-color: #000;
+    --denary-color: #000;
+    --primary-font: 'InterX', sans-serif;
+    --secondary-font: 'InterX', sans-serif;
+    --tertiary-font: 'InterX', sans-serif;
+    --quaternary-font: 'InterX', sans-serif;
+    --quinary-font: 'InterX', sans-serif;
+    --senary-font: 'InterX', sans-serif;
+    --septenary-font: 'InterX', sans-serif;
+    --octonary-font: 'InterX', sans-serif;
+    --nonary-font: 'InterX', sans-serif;
+    --denary-font: 'InterX', sans-serif;
+}
+
+#imageOnIndex {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/backgro0und.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: 1;
+}
+#rent, #ride {
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    position: absolute;
+    z-index: 2;
+}
+#rent {
+    top: 1vh;
+    left: 5vw;
+}
+#headlineRent {
+    top: 55vh;
+    position: absolute;
+}
+#ride {
+    top: 17vh;
+    left: 30vw;
+}
+#my {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+    z-index: 2;
+    top: 10vh;
+    left: 22vw;
+}   
+#searchText {
+    margin-top: 7vh;
+    position: absolute;
+    top: 110vh;
+    left: 60vw;
+}
+#search {
+    width: 40%;
+    margin-top: 10vh;
+    margin-left: 7vw;
+    margin-bottom: 5vh;
+    outline: none;
+    padding: 1.1%;
+    background: var(--secondary-color);
+    border: none;
+    box-shadow: 15px 10px rgba(124, 177, 234, 0.50);
+    padding-left: 50px; /* Platz für das Icon */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png'); /* Beispiel-Lupe */
+    background-size: 1.5vw 1.5vw;
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    font-size: 1.2rem;
+}
+#vermiete {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+#skisnow {
+    color: var(--quaternary-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 7.6vw;
+}
+
+#examples {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--secondary-color);
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    box-sizing: border-box;
+    justify-content: center;
+    grid-gap: 15px;
+    padding: 2%;
+}
+.pictureExample {
+    cursor: pointer;
+    transition: all 0.5s;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;  
+    border-radius: 5px;  
+}
+.pictureExample:hover {
+    box-shadow: 0 8px 32px rgba(58, 127, 202, 0.4);
+    transform: rotate(-2deg) scale(1.03);
+    filter: brightness(1.1) saturate(1.2);
+}
+#ski, #ski1 {
+    border-radius: 50px;
+    background: rgba(124, 177, 234, 0.64);
+    width: 35vw;
+    height: 9vh;
+    opacity: 0.6;
+    flex-shrink: 0;
+    transition: opacity 0.5s;
+}
+#ski {
+    transform: rotate(-103.48deg);
+    margin-top: 35vh;
+}
+
+#ski1 {
+    transform: rotate(-68.246deg);
+    margin-top: -10vh;
+
+    margin-left: 5vw;
+}
+#ski1:hover {
+    opacity: 1;
+}
+#ski:hover {
+    opacity: 1;
+}
+
+#iconSki {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+#snowboard {
+    border-radius: 85px;
+    background: rgba(124, 177, 234, 0.64);
+    width: 35vw;
+    height: 17vh;
+    transform: rotate(-59.593deg);
+    flex-shrink: 0;
+    margin-top: 35vh;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+#snowboard:hover {
+    opacity: 1;
+}
+#textSki {
+    color: transparent;
+    transform: rotate(-68.111deg);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -45vh;
+    margin-left: 15vw;
+}
+#textSnowboard {
+    color: transparent;
+    transform: rotate(-59.301deg);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -50vh;
+    margin-left: -8vw;
+}

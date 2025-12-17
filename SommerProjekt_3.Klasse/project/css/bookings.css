@@ -1,0 +1,72 @@
+#grid {
+    width: 100%;
+    padding: 5%;
+    padding-top: 2%;
+}
+#boxForInfos {
+    width: 90%;
+    margin-top: 5vh;
+}   
+.gridBox p {
+    padding: 3%;
+    margin-bottom: 2%;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+.rating {
+ transition: all 0.3s ease;  
+}
+.rating:hover {
+    transform: scale(1.2);
+}
+#details {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.gridBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 22% 22% 22% 22% 5%;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.gridBox:hover{
+    transform: scale(1.05);
+}
+#startDate {
+    color: var(--quaternary-color) !important;
+}
+#endDate {
+    color: var(--secondary-color) !important;
+}
+#price {
+    color: rgba(124, 177, 234, 0.495) !important;
+}
+.idStyle {
+    background-color: var(--primary-color);
+}
+.startStyle {
+    background-color: var(--quaternary-color);
+}
+.endStyle {
+    background-color: var(--secondary-color);
+}
+.priceStyle {
+    background-color: rgba(124, 177, 234, 0.495);
+}
+h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.headlineTable {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+    background-color: none;
+}

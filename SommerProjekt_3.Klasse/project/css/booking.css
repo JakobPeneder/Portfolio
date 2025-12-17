@@ -1,0 +1,59 @@
+#container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4%;
+    padding-top: 1.5%;
+}
+#booking {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+    border-bottom: 5px solid var(--primary-color);
+}
+#dateBox {
+    margin-top: 5vh;
+    padding: 1%;
+    padding-left: 5%;
+    background-color: rgba(124, 177, 234, 0.167);
+    border-radius: 5px;
+}
+.attribute {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+.date {
+    color: var(--denary-color);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 5vh;
+}
+#pay {
+    width: 20%;
+    padding: 1%;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#pay:hover {
+   background-color: var(--primary-color);
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,169 @@
+@font-face {
+    font-family: InterX;
+    src: url(.././font/InterVariable.ttf);
+}
+:root {
+    --primary-color: #3A7FCA;
+    --secondary-color: #7CB1EA;
+    --tertiary-color: #FFF;
+    --quaternary-color: #4698F1;
+    --quinary-color: #000;
+    --senary-color: #000;
+    --septenary-color: #000;
+    --octonary-color: #000;
+    --nonary-color: #000;
+    --denary-color: #000;
+    --primary-font: 'InterX', sans-serif;
+    --secondary-font: 'InterX', sans-serif;
+    --tertiary-font: 'InterX', sans-serif;
+    --quaternary-font: 'InterX', sans-serif;
+    --quinary-font: 'InterX', sans-serif;
+    --senary-font: 'InterX', sans-serif;
+    --septenary-font: 'InterX', sans-serif;
+    --octonary-font: 'InterX', sans-serif;
+    --nonary-font: 'InterX', sans-serif;
+    --denary-font: 'InterX', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    overflow-x: hidden;
+    font-family: InterX;
+}
+
+#navigation {
+    position: sticky;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1.2%;
+    padding-left: 3%;
+    align-items: center;
+    padding-right: 3%;
+}
+#navigation a {
+    color: #FFF;
+    font-family: InterX;
+    font-size: 1.4rem;
+    text-align: left;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    margin-right: -3vw;
+    box-sizing: border-box;
+}
+
+#navigation a:hover {
+    cursor: pointer;
+}
+.navContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 11% 80%;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 2vw;
+}
+.iconsNav {
+    width: 100%;
+    color: var(--tertiary-color);
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+#logo {
+    width: 120%;
+}
+#footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+.notClickable {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.8;
+}
+.clickable {
+    pointer-events: auto;
+    cursor: pointer;
+    opacity: 1;
+}
+#footer p{
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+    line-height: normal;
+    margin-top: 3vh;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+#footer a {
+    font-family: var(--primary-font);
+    line-height: normal;
+    color: var(--tertiary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1%;
+}
+.footerRent {
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5vh;
+    display: inline;
+}
+.iconsSocial {
+    font-size: 2.5vw;
+    color: var(--tertiary-color);
+    margin-top: 3vh;
+    margin-right: 10px;
+}
+.highlight {
+    width: 80%;
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 2% 2%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+.highlight:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#calendar {
+    margin-right: 1vw;
+}
+#bookingStyle {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+#profilStyle {
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+    text-align: right !important;
+    
+}
+#profilStyle a {
+   text-align: right !important;
+}
+.toomuchWidth {
+    width: auto;
+    margin-left: auto;
+}

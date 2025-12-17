@@ -1,0 +1,235 @@
+body {
+    overflow:visible;
+}
+#searchText {
+    margin-top: 7vh;
+    position: absolute;
+    top: 10vh;
+    left: 60vw;
+}
+#filterGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 1.2%;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    grid-gap: 20px;
+}
+#filterGrid div, select {
+    width: 100%;
+    padding: 1%;
+    border: 1px solid var(--primary-color);
+    font-family: InterX;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+        font-size: 1.1rem;
+}
+#errorMessageInput {
+    color: red;
+    font-family: InterX;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+option {
+    text-transform: none;
+}
+#backgroundBlur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+    display: none;
+}
+#optionBox {
+    padding: 2%;
+    position: fixed;
+    width: 45%;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    z-index: 102;
+    box-sizing: border-box;
+}
+.filterOp {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 5vh;
+}
+#optionBox input {
+    width: 100%;
+    padding: 1%;
+    border: 1px solid var(--primary-color);
+    font-family: InterX;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    outline:none;
+    margin-bottom: 2vh;
+}
+.submit {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: InterX;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10%;
+    margin-left: auto;
+}
+.interrupt {
+    background-color: #66666645;
+    color: black;
+    font-family: InterX;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    padding: 1%;
+      padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 0;
+}
+select {
+    outline: none;
+}
+.searchResultImage {
+    width: 80%;
+    height: 27vh;
+    padding: 5%;
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(124, 177, 234, 0.167);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(124, 177, 234, 0.50);
+}
+.searchResult {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}   
+.searchResultText {
+    position: relative;
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: rgba(124, 177, 234, 0.505);
+    padding-bottom: 2rem; /* Platz für Standort unten */
+    border-radius: 5px;
+}
+.searchResultText p {
+    width: 100%;
+    box-sizing: border-box;
+}
+#searchResults {
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    box-sizing: border-box;
+}
+#search {
+    width: 40%;
+    margin-top: 10vh;
+    margin-left: 7vw;
+    margin-bottom: 5vh;
+    outline: none;
+    padding: 1.1%;
+    background: var(--secondary-color);
+    border: none;
+    box-shadow: 15px 10px rgba(124, 177, 234, 0.50);
+    padding-left: 50px; /* Platz für das Icon */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png'); /* Beispiel-Lupe */
+    background-size: 1.5vw 1.5vw;
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    font-size: 1.2rem;
+}
+#vermiete {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+#noResults {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5vh;
+    margin-left: 4vw;
+}
+#skisnow {
+    color: var(--quaternary-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 7.6vw;
+}
+#flexible {
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    align-items: flex-end;
+   
+}
+.title {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.price {
+    color: var(--quinary-color);
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    line-height: normal;
+}
+.location {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+.brand {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.gridPriceBrand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}

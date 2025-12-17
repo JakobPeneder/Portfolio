@@ -1,0 +1,57 @@
+# Access Server: http://localhost:8080
+# Files: ./htdocs
+
+# Access phpMyAdmin: http://localhost:8081
+# Username: root
+# Password: rootpassword
+
+# MySQL Database
+# servername: db
+# port: 3306
+# username: root
+# password: rootpassword
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-app
+    volumes:
+      - ./htdocs:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - db_server
+    networks:
+      - docker_php_network
+
+  db_server:
+    image: mysql:latest
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - docker_php_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      - db_server
+    networks:
+      - docker_php_network
+
+volumes:
+  db_data:
+
+networks:
+  docker_php_network:

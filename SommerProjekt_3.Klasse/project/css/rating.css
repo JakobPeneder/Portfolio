@@ -1,0 +1,40 @@
+#ratingContainer {
+    width: 100%;
+    padding: 2%;
+}
+#ratingBox {
+    width: 50%;
+    min-height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    background-color: rgba(124, 177, 234, 0.167);    
+    border-radius: 5px;
+    margin-bottom: 10%;
+    box-shadow: 10px 10px 10px rgba(124, 177, 234, 0.50);
+    padding: 2%;
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 2%;
+}
+#starRating {
+    margin-bottom:6%;
+}
+#userName {
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+#submitButton {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

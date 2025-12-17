@@ -1,0 +1,452 @@
+#vermiete {
+    width: 30vw;
+    border-radius: 50px;
+    border: 4px solid var(--quaternary-color);
+    text-align:right;
+    padding: 1%;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2%;
+}
+#gefahrt {
+    width: 30vw;
+    border-radius: 50px;
+    background: var(--quaternary-color);
+    transform: rotate(10deg);
+    text-align: right;
+    padding: 1%;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2%;
+}
+#headline {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4vh;
+}
+#gridInput {
+    width: 100vw;
+    margin-top: 12vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+}
+.gridVertical {
+    width: 100vw;  
+    margin-top: 12.5vh; 
+}
+.inputLabel {
+    color: #3A7FCA;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+
+}
+
+input, select {
+    width: 70%;
+    background: rgba(124, 177, 234, 0.64);
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 2.5%;
+    box-shadow: 15px 10px rgba(14, 121, 236, 0.5);
+    box-sizing: border-box;
+    font-weight: bold;
+    color: var(--primary-color);
+    border-radius: 5px;
+
+}
+select {
+    appearance: none;
+}
+input::placeholder {
+    color: #3a80ca93;
+    font-size: 1.1rem;
+    font-family: InterX;
+    font-weight: lighter;
+}
+textarea {
+    width: 70%;
+    background: rgba(124, 177, 234, 0.64);
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    min-height: 20vh;
+    color: var(--primary-color);
+    padding: 2%;
+    font-family: InterX;
+    box-shadow: 15px 10px rgba(14, 121, 236, 0.5);
+    resize: vertical;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vh;
+    grid-gap: 30px;
+}
+#background {
+    position: fixed;
+    width: 100%;
+    z-index: -5;
+    box-sizing: border-box;
+}
+#circle {
+    width: 50%;
+    position: absolute;
+    margin-top: -40vh;
+    margin-left: -20vw;
+    z-index: -1;
+}
+#circle2 {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    margin-top: -10vh;
+    margin-right: -13vw;
+    z-index: -1;
+}
+#klecks1 {
+    width: 40%;
+    position: absolute;
+    transform: rotate(280deg);
+    margin-left: -15vw;
+    margin-top: -6vh;
+    z-index: -1;
+}
+#klecks2 {
+    width: 30%;
+    position: absolute;
+    transform: rotate(280deg);
+    margin-left: 70vw;
+    margin-top: 7vh;
+    z-index: -1;
+}
+#klecks3 {
+    width: 35%;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: -8vw;
+    z-index: -2;
+}
+#klecks4 {
+    width: 35%;
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: 70vw;
+    transform: rotate(90deg);
+    z-index: -2;
+}
+#submitButton {
+    width: 20vw;
+    background: var(--quaternary-color);
+    text-align: center;
+    padding: 1%;
+    color: var(--tertiary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+#submitButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#existingImages, #preview {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-gap: 1vw;
+    box-sizing: border-box;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: rgba(124, 177, 234, 0.64);
+    box-shadow: 15px 10px rgba(14, 121, 236, 0.5);
+}
+
+#preview img {
+    width: 100%;
+    transition: opacity 0.5s;
+}
+#preview img:hover {
+    opacity: 0.7;
+}
+.deleteIcon {
+    position: absolute;
+    z-index: 50;
+    margin-top: -1vh;
+    margin-left: -1vh;
+    background-color: #fff;
+    border-radius: 50%;
+    color: crimson;
+    font-size: 1.2rem;  
+    cursor: pointer;
+}
+#dropzone {
+    width: 70%;
+    border: 2px dashed #66aaff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 3%;
+    text-align: center;
+    background-color: #e8f4ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dropzone.dragover {
+    background-color: #cde6ff;
+}
+/* Die Slider-Linie */
+
+input[type=range] {
+    width: 70%;
+    background: rgba(124, 177, 234, 0.64);
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 1vw;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px; /* Größe des Schiebereglers */
+    height: 15px; /* Größe des Schiebereglers */
+    cursor: pointer;
+    border-radius: 50%; /* Runde Form */
+    background: var(--quaternary-color); /* ➔ Farbe */
+}
+/* Die Labels */
+.stateLabels {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    font-size: 0.8rem;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+
+
+/* Optional: Schöne kleine Punkte unter dem Slider */
+
+
+#gut {
+    text-align: center;
+}
+#schlecht {
+    text-align: right;
+}
+#gebraucht {
+    text-align: right;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Der "Schieber" */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: .4s;
+    border-radius: 34px;
+}
+#typGrid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+#typGrid i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.fa-person-snowboarding {
+    text-align: right;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+#gridAddress {
+    width: 70%;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 1rem;
+    box-sizing: border-box;
+}
+#gridStreet {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Straße + Ort groß, Hausnr + PLZ kleiner */
+    gap: 1rem;
+    box-sizing: border-box;
+}  
+#gridCity {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Straße + Ort groß, Hausnr + PLZ kleiner */
+    gap: 1rem;
+    box-sizing: border-box;
+}
+#streetLabel, #housenumberLabel, #plzLabel, #cityLabel {
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.transSymbolBig {
+    animation: transSymbolBig 0.5s ease-in-out;
+}
+@keyframes transSymbolBig {
+    0% {
+        font-size: 2.5rem;
+        opacity: 0.7;
+    }
+    100% {
+        font-size: 3rem;
+        opacity: 1;
+    }
+}
+.transSymbolSmall {
+    animation: transSymbolSmall 0.5s ease-in-out;
+}
+@keyframes transSymbolSmall {
+    0% {
+        font-size: 3rem;
+        opacity: 1;
+    }
+    100% {
+        font-size: 2.5rem;
+        opacity: 0.7;
+    }
+}
+#gridAddress p {
+    margin-bottom: 1vh;
+}
+#gridSaveAddress {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    justify-content: center;
+    margin-top: -5vh;
+}
+#saveAddress {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    box-shadow: none;
+  }
+  #errorMessage, #errorMessageAddress {
+    color: crimson;
+    text-align: left;
+    display: none;
+    margin-top: 1vh;
+    position: relative;
+  }
+  #loadImage {
+    margin-bottom: 0vh;
+  }
+  #saveAddress:checked + #saveAddressLabel {
+    color: var(--quaternary-color);
+  }
+  #saveAddress:checked {
+    background-color: var(--quaternary-color);
+    border: 2px solid var(--quaternary-color);
+  }
+  #saveAddress:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+
+  }
+#saveAddressLabel {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#gridAddress input {
+    width: 100%;
+    background: rgba(124, 177, 234, 0.64);
+    border: none;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: none;
+  }
+/* Wenn angehakt */
+.toggle-switch input:checked + .slider {
+}
+
+/* Schiebeknopf bewegt sich */
+.toggle-switch input:checked + .slider::before {
+    transform: translateX(24px);
+}

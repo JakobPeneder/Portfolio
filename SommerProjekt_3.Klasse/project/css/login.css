@@ -1,0 +1,152 @@
+@font-face {
+    font-family: InterX;
+    src: url(.././font/InterVariable.ttf);
+}
+:root {
+    --primary-color: #3A7FCA;
+    --secondary-color: #7CB1EA;
+    --tertiary-color: #FFF;
+    --quaternary-color: #000;
+    --quinary-color: #000;
+    --senary-color: #000;
+    --septenary-color: #000;
+    --octonary-color: #000;
+    --nonary-color: #000;
+    --denary-color: #000;
+    --primary-font: 'InterX', sans-serif;
+    --secondary-font: 'InterX', sans-serif;
+    --tertiary-font: 'InterX', sans-serif;
+    --quaternary-font: 'InterX', sans-serif;
+    --quinary-font: 'InterX', sans-serif;
+    --senary-font: 'InterX', sans-serif;
+    --septenary-font: 'InterX', sans-serif;
+    --octonary-font: 'InterX', sans-serif;
+    --nonary-font: 'InterX', sans-serif;
+    --denary-font: 'InterX', sans-serif;
+}
+body {
+    font-family: InterX;
+}
+#gridLogin {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#imageBlur {
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 767px;
+    background: rgba(124, 177, 234, 0.66);
+    filter: blur(90.6500015258789px);
+}
+#skier {
+    position: absolute;
+    z-index: 2;
+    font-size: 280px;
+    left: 160px;
+    top: 130px;
+    animation: skier 2s infinite;
+}
+@keyframes skier {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+form h1 {
+    margin-bottom: 8vh;
+}
+form {
+    padding-top: 10vh;
+    margin-left: -5vw;
+}
+label {
+    display: block;
+    color: var(--primary-color);
+    font-family: InterX;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0.5vh;
+    font-size: 14px;
+}
+input {
+    display: block;
+    background: rgba(124, 177, 234, 0.64);
+    outline: none;
+    border: none;
+    margin-bottom: 5vh;
+    padding: 1.5%;
+    width: 60%;
+    font-size: 1.2rem;
+    padding-left: 40px;
+    color: #1a1a1a;
+}
+input:focus {
+    background: rgba(124, 177, 234, 0.331);
+    font-weight: bold;
+}
+.button {
+    width: 10vw;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2%;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 18px;
+    z-index: 10;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#gotAccount {
+    color: #000;
+    font-family: InterX;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    padding-left: 140px;
+}
+#errorMessages {
+    margin-bottom: 3vh;
+    color: #d32f2f;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: none;
+}
+#checkName, #checkPassword, #checkEmail {
+    text-align: right;
+    margin-left: 70%;
+}
